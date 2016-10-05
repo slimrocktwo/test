@@ -1,0 +1,13 @@
+mkdir -p sandbox/css
+cd sandbox
+mkdir images
+mkdir scripts
+touch index.html
+cp /var/www/images/logo1.png ./images
+cp /var/www/images/logo2.png ./images
+cd ..
+chmod -R 711 sandbox/
+cd sandbox
+ls -l > web-listing
+ls -l /var/www/images | grep .png > avail-images
+
